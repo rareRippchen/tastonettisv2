@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Play, Users, Music } from "lucide-react"
-import heroImage from "@/assets/hero-image.jpg"
+import heroImage from "@/assets/tastonettis-cover.png"
 
 export function HeroSection() {
   return (
