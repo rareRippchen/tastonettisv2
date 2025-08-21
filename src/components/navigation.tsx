@@ -18,7 +18,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Tastonettis</span>
+            <img src="/tastonettis-logo.svg" alt="Tastonettis" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
