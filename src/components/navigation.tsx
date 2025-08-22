@@ -7,10 +7,10 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { href: "#about", label: "Über uns" },
-    { href: "#music", label: "Musik" },
-    { href: "#booking", label: "Buchen" },
-    { href: "#contact", label: "Kontakt" },
+    { href: "/#about", label: "Über uns" },
+    { href: "/#music", label: "Musik" },
+    { href: "/#booking", label: "Buchen" },
+    { href: "/#contact", label: "Kontakt" },
   ]
 
   return (
