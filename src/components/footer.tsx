@@ -22,6 +22,7 @@ export function Footer() {
               <li><a href="#music" className="text-muted-foreground hover:text-primary transition-colors">Musik</a></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Kontakt</a></li>
               <li><a href="/impressum" className="text-muted-foreground hover:text-primary transition-colors">Impressum</a></li>
+              <li><a href="/datenschutz" className="text-muted-foreground hover:text-primary transition-colors">Datenschutz</a></li>
             </ul>
           </div>
           
