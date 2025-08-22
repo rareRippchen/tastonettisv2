@@ -21,15 +21,16 @@ export function Footer() {
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">Über uns</a></li>
               <li><a href="#music" className="text-muted-foreground hover:text-primary transition-colors">Musik</a></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href="/impressum" className="text-muted-foreground hover:text-primary transition-colors">Impressum</a></li>
             </ul>
           </div>
           
           <div className="text-center md:text-right">
             <h3 className="font-semibold mb-4">Kontakt</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>info@tastonettis.de</p>
-              <p>+49 (0) 123 456 789</p>
-              <p>Musikstraße 1, 12345 Musikstadt</p>
+              <p>tastonettis@googlemail.com</p>
+              <p>+49 (0) 178 584 74 72</p>
+              <p>Stolzenfelsstraße 4, 10318 Berlin</p>
             </div>
           </div>
         </div>
