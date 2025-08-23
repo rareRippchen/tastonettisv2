@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Play, Film, Camera } from "lucide-react"
+import { ConsentYouTube } from "@/components/consent-youtube"
 
 export function VideoSection() {
   return (
@@ -50,23 +51,11 @@ export function VideoSection() {
           </div>
 
           <div className="relative">
-            <Card className="overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300">
-              <CardContent className="p-0 relative aspect-video bg-gradient-hero flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                  <h4 className="text-xl font-semibold mb-2">Musikvideo ansehen</h4>
-                  <p className="text-white/80 mb-6">Erleben Sie unsere Musik</p>
-                  <Button 
-                    size="lg" 
-                    className="bg-white text-primary hover:bg-white/90"
-                  >
-                    <Play className="w-5 h-5 mr-2" />
-                    Video abspielen
-                  </Button>
-                </div>
-                <div className="absolute inset-0 bg-black/20" />
-              </CardContent>
-            </Card>
+            <ConsentYouTube 
+              videoId="dQw4w9WgXcQ" 
+              title="Tastonettis Musikvideo"
+              description="Erleben Sie unsere Musik"
+            />
             
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground mb-4">
