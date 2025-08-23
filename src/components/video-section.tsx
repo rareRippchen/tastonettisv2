@@ -61,7 +61,11 @@ export function VideoSection() {
               <p className="text-sm text-muted-foreground mb-4">
                 Wenn es euch gefällt, dann lasst es uns wissen.
               </p>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button 
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Feedback geben
               </Button>
             </div>
