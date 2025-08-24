@@ -29,7 +29,7 @@ export function ContactSection() {
                   <Mail className="w-5 h-5 mr-3 text-primary" />
                   <div>
                     <p className="font-medium">E-Mail</p>
-                    <p className="text-muted-foreground text-sm">info@tastonettis.de</p>
+                    <p className="text-muted-foreground text-sm">tastonettis@googlemail.com</p>
                   </div>
                 </div>
                 
@@ -37,7 +37,7 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 mr-3 text-accent" />
                   <div>
                     <p className="font-medium">Telefon</p>
-                    <p className="text-muted-foreground text-sm">+49 (0) 123 456 789</p>
+                    <p className="text-muted-foreground text-sm">+49 (0) 178 584 74 72</p>
                   </div>
                 </div>
                 
@@ -45,7 +45,7 @@ export function ContactSection() {
                   <MapPin className="w-5 h-5 mr-3 text-primary" />
                   <div>
                     <p className="font-medium">Adresse</p>
-                    <p className="text-muted-foreground text-sm">Musikstraße 1<br />12345 Musikstadt</p>
+                    <p className="text-muted-foreground text-sm">Stolzenfelsstraße 4<br />10318 Berlin</p>
                   </div>
                 </div>
               </CardContent>
