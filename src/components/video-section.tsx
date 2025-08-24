@@ -14,7 +14,7 @@ export function VideoSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <Card className="bg-primary/5 border-primary/20">
               <CardContent className="p-6">
