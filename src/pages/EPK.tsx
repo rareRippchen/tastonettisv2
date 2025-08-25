@@ -110,7 +110,7 @@ const EPK = () => {
             <CardContent>
               <div className="w-full aspect-video">
                 <ConsentYouTube 
-                  videoId="k85C1iOEr6M"
+                  videoId="FFWBftLy54Y"
                   title="Tastonettis - Live Performance"
                   description="Erleben Sie die Tastonettis in Aktion"
                 />
