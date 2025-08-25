@@ -9,9 +9,9 @@ export function Navigation() {
   const navItems = [
     { href: "/#about", label: "Über uns" },
     { href: "/#music", label: "Musik" },
-    { href: "/epk", label: "EPK" },
     { href: "/#booking", label: "Buchen" },
     { href: "/#contact", label: "Kontakt" },
+    { href: "/epk", label: "EPK" },
   ]
 
   return (

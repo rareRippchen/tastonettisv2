@@ -2,30 +2,43 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ConsentYouTube } from "@/components/consent-youtube";
-import { Download, Mail, Phone, Users, Clock, Music, Award, MapPin } from "lucide-react";
+import { Footer } from "@/components/footer";
+import { Download, Mail, Phone, Users, Clock, Music, Award, MapPin, ArrowLeft } from "lucide-react";
 
 const EPK = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <section className="relative py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Electronic Press Kit
-          </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Tastonettis - Akkordeon-Orchester Berlin
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              Gegründet 2010
-            </Badge>
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              15+ Musiker
-            </Badge>
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              Berlin
-            </Badge>
+        <div className="container mx-auto px-4">
+          <div className="mb-8">
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-white/10"
+              onClick={() => window.location.href = '/'}
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Zurück zur Startseite
+            </Button>
+          </div>
+           <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Electronic Press Kit
+            </h1>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
+              Tastonettis - Akkordeon-Orchester Berlin
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Badge variant="secondary" className="text-lg px-4 py-2">
+                Gegründet 2010
+              </Badge>
+              <Badge variant="secondary" className="text-lg px-4 py-2">
+                15+ Musiker
+              </Badge>
+              <Badge variant="secondary" className="text-lg px-4 py-2">
+                Berlin
+              </Badge>
+            </div>
           </div>
         </div>
       </section>
@@ -312,6 +325,8 @@ const EPK = () => {
           </CardContent>
         </Card>
       </div>
+      
+      <Footer />
     </div>
   );
 };
