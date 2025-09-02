@@ -1,15 +1,31 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import tastoCover from "@/assets/tastonettis-cover.png"
 
 const Datenschutz = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="container mx-auto px-4 py-24">
-        <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
-          <h1>Datenschutz</h1>
-          
-          <h2>Datenschutzerklärung</h2>
+      
+      {/* Hero Section with Cover Image */}
+      <div className="relative">
+        <div className="w-full h-[500px] overflow-hidden">
+          <img 
+            src={tastoCover} 
+            alt="Kinder mit Akkordeons" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
+            Datenschutz
+          </h1>
+        </div>
+      </div>
+
+      <main className="container mx-auto px-4 py-12">
+        <article className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
+          <h2 className="text-2xl font-semibold mb-6">Datenschutzerklärung</h2>
           
           <p>
             Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten") innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot"). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung" oder „Verantwortlicher" verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
@@ -316,7 +332,7 @@ const Datenschutz = () => {
           <p>
             <strong>Erstellt mit <a href="https://datenschutz-generator.de/">Datenschutz-Generator.de</a> von RA Dr. Thomas Schwenke</strong>
           </p>
-        </div>
+        </article>
       </main>
       <Footer />
     </div>
