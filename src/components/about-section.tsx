@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Heart, Star, Award } from "lucide-react"
-import norwayCover from "@/assets/norway-cover.jpg"
 
 export function AboutSection() {
   return (
@@ -38,21 +37,7 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="relative overflow-hidden rounded-xl shadow-elegant">
-              <img 
-                src={norwayCover} 
-                alt="Tastonettis Orchester-Mitglieder in der Natur - gemeinsam musizieren und das Leben genießen" 
-                className="w-full h-80 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                <p className="text-white font-medium">
-                  Unser Orchester in der Natur - "Lebe das Leben" ist mehr als nur ein Motto
-                </p>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="shadow-elegant hover:shadow-glow transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <Award className="w-12 h-12 mx-auto mb-4 text-primary" />
@@ -82,7 +67,6 @@ export function AboutSection() {
                 </p>
               </CardContent>
             </Card>
-          </div>
           </div>
         </div>
       </div>

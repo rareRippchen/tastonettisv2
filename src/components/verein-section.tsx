@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Heart, Award, HandHeart, Building2, FileText, Music } from "lucide-react";
-import norwayCover from "@/assets/norway-cover.jpg";
+import { Users, Heart, Award, HandHeart, Building2, FileText } from "lucide-react";
 
 export const VereinSection = () => {
   return (
@@ -242,30 +241,6 @@ export const VereinSection = () => {
                 </div>
               </div>
             </CardContent>
-          </Card>
-        </div>
-
-        {/* Community Image Section */}
-        <div className="mt-16 mb-8">
-          <Card className="overflow-hidden shadow-elegant">
-            <div className="relative">
-              <img 
-                src={norwayCover} 
-                alt="Tastonettis Vereinsmitglieder und Orchester - eine starke Gemeinschaft" 
-                className="w-full h-64 sm:h-80 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70 flex items-center justify-center">
-                <div className="text-center text-white max-w-3xl px-6">
-                  <Music className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-                    Gemeinsam stark - Gemeinsam musikalisch
-                  </h3>
-                  <p className="text-lg opacity-90">
-                    Unser Verein verbindet Menschen, die die Musik lieben und das Orchester unterstützen
-                  </p>
-                </div>
-              </div>
-            </div>
           </Card>
         </div>
 
