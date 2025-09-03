@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ConsentYouTube } from "@/components/consent-youtube";
 import { Footer } from "@/components/footer";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Download, Mail, Phone, Users, Clock, Music, Award, MapPin, ArrowLeft } from "lucide-react";
 
 const EPK = () => {
@@ -11,7 +12,7 @@ const EPK = () => {
       {/* Header */}
       <section className="relative py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
+          <div className="flex justify-between items-start mb-8">
             <Button 
               variant="ghost" 
               className="text-white hover:bg-white/10"
@@ -20,6 +21,7 @@ const EPK = () => {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zur Startseite
             </Button>
+            <ThemeToggle />
           </div>
            <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
