@@ -20,8 +20,8 @@ export const VereinSection = () => {
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           {/* Left Column - About the Association */}
-          <div className="space-y-8">
-            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant">
+          <div className="flex flex-col space-y-8">
+            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant flex-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Building2 className="h-6 w-6 text-primary" />
@@ -43,7 +43,7 @@ export const VereinSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant">
+            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant flex-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Users className="h-6 w-6 text-primary" />
@@ -82,8 +82,8 @@ export const VereinSection = () => {
           </div>
 
           {/* Right Column - Membership & Support */}
-          <div className="space-y-8">
-            <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 shadow-elegant">
+          <div className="flex flex-col space-y-8">
+            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant flex-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Heart className="h-6 w-6 text-primary" />
@@ -95,7 +95,7 @@ export const VereinSection = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-4">
-                  <div className="bg-background/50 rounded-lg p-4">
+                  <div className="bg-primary/5 rounded-lg p-4">
                     <h4 className="font-semibold mb-2">Jahresbeitrag</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between">
@@ -133,7 +133,7 @@ export const VereinSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant">
+            <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant flex-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <HandHeart className="h-6 w-6 text-primary" />
