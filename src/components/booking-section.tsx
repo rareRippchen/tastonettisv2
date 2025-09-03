@@ -44,8 +44,8 @@ export function BookingSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Main Booking Info */}
-          <div className="space-y-8">
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/50">
+          <div className="flex flex-col space-y-8">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/50 flex-1">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">Unsere Leistungen</CardTitle>
                 <CardDescription>
@@ -90,7 +90,7 @@ export function BookingSection() {
             </Card>
 
             {/* Contact Card */}
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/10 to-primary/5">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/10 to-primary/5 flex-1">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">Kontakt & Buchung</CardTitle>
                 <CardDescription>
@@ -134,8 +134,8 @@ export function BookingSection() {
           </div>
 
           {/* Technical Requirements */}
-          <div className="space-y-8">
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/50">
+          <div className="flex flex-col space-y-8">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-card to-card/50 flex-1">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">Technische Anforderungen</CardTitle>
                 <CardDescription>
@@ -159,7 +159,7 @@ export function BookingSection() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-muted/50 to-muted/20">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-muted/50 to-muted/20 flex-1">
               <CardHeader>
                 <CardTitle className="text-xl text-primary">Zusätzliche Services</CardTitle>
               </CardHeader>
