@@ -42,7 +42,7 @@ export function BookingSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Main Booking Info */}
           <div className="flex flex-col space-y-8">
             <Card className="bg-card/50 backdrop-blur-sm border border-border/50 shadow-elegant flex-1">
