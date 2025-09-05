@@ -125,11 +125,16 @@ All colors MUST be HSL.
 
 body {
   @apply bg-background text-foreground;
+}
+
+/* Prevent layout shift when modals open by maintaining scrollbar space */
+html {
   scrollbar-gutter: stable;
 }
 
-/* Prevent layout shift when dialogs open */
-html {
-  scrollbar-gutter: stable;
+/* Override Radix UI body scroll lock to prevent layout shift */
+body[data-scroll-locked] {
+  padding-right: 0 !important;
+  overflow: auto !important;
 }
 }
