@@ -128,6 +128,16 @@ body {
   scrollbar-gutter: stable;
 }
 
+/* Fix dialog scroll lock layout shift */
+body[data-scroll-locked] {
+  margin-right: var(--scrollbar-width, 0px);
+}
+
+/* Store scrollbar width for consistent layout */
+html {
+  --scrollbar-width: calc(100vw - 100%);
+}
+
 /* Prevent layout shift when dialogs open */
 html {
   scrollbar-gutter: stable;
