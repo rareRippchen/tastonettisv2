@@ -123,7 +123,13 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
-  }
+body {
+  @apply bg-background text-foreground;
+  scrollbar-gutter: stable;
+}
+
+/* Prevent layout shift when dialogs open */
+html {
+  scrollbar-gutter: stable;
+}
 }
