@@ -126,10 +126,4 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* Prevent layout shift when dialog opens by maintaining scrollbar space */
-  body[data-scroll-locked] {
-    padding-right: var(--scrollbar-width, 0px) !important;
-    margin-right: 0 !important;
-  }
 }
