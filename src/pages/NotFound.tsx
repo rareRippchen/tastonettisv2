@@ -34,7 +34,7 @@ const NotFound = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
               Es scheint, als wären Sie auf eine Seite gestoßen, die nicht in unserem Repertoire steht. 
-              Aber keine Sorge – im Tastonettis-Orchester spielen wir immer weiter!
+              Aber keine Sorge – bei den Tastonettis spielen wir immer weiter!
             </p>
             
             {/* Musical note decoration */}
