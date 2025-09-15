@@ -1,4 +1,4 @@
-import { Heart, Music } from "lucide-react"
+import { Heart, Music, ExternalLink } from "lucide-react"
 
 export function Footer() {
   return (
@@ -36,11 +36,55 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p className="flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-primary" /> by Tastonettis
-          </p>
-          <p className="mt-2 text-sm">&copy; 2024 Tastonettis. Alle Rechte vorbehalten.</p>
+        <div className="border-t mt-8 pt-8">
+          <div className="text-center mb-6">
+            <h3 className="font-semibold mb-4">Hört uns auf</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="https://open.spotify.com/search/tastonettis" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Spotify
+              </a>
+              <a 
+                href="https://music.apple.com/search?term=tastonettis" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Apple Music
+              </a>
+              <a 
+                href="https://music.youtube.com/search?q=tastonettis" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                YouTube Music
+              </a>
+              <a 
+                href="https://music.amazon.de/search/tastonettis" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Amazon Music
+              </a>
+            </div>
+          </div>
+          
+          <div className="text-center text-muted-foreground">
+            <p className="flex items-center justify-center">
+              Made with <Heart className="w-4 h-4 mx-1 text-primary" /> by Tastonettis
+            </p>
+            <p className="mt-2 text-sm">&copy; 2024 Tastonettis. Alle Rechte vorbehalten.</p>
+          </div>
         </div>
       </div>
     </footer>
