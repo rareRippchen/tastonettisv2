@@ -4,7 +4,7 @@ import heroImage from "@/assets/tastonettis-cover.png"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero text-white overflow-hidden pt-16">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${heroImage})` }}
