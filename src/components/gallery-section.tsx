@@ -43,7 +43,7 @@ export const GallerySection = () => {
   ]
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-background via-background to-accent/10">
+    <section id="gallery" className="py-24 px-4 bg-gradient-to-br from-background via-background to-accent/10">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 px-4 py-2">
