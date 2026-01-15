@@ -6,6 +6,7 @@ import { GallerySection } from "@/components/gallery-section"
 import { VereinSection } from "@/components/verein-section"
 import { BookingSection } from "@/components/booking-section"
 import { ContactSection } from "@/components/contact-section"
+import { FAQSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
         <VereinSection />
         <BookingSection />
         <ContactSection />
+        <FAQSection />
       </main>
       <Footer />
     </div>
