@@ -1,37 +1,30 @@
-name: Build and Deploy Dist
+name: Deploy to public
 
 on:
   push:
     branches: [ main ]
-
-permissions:
-  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
         node-version: 20
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build  # Baut Lovable-Projekt in /dist [web:1][web:22]
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - uses: actions/download-artifact@v4
-      with:
-        name: dist
-        path: dist
-    - name: Commit dist folder
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build
+      run: npm run build
+
+    - name: Deploy to public branch
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dist  # Oder gh-pages
-        folder: dist
-        clean: true  # Überschreibt Ordner [web:21][web:16]
+        publish_dir: ./public  # Oder ./dist je package.json
+        publish_branch: public
