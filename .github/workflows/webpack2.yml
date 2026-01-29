@@ -1,45 +1,37 @@
-name: Build and release static site
+name: Build and Deploy Dist
 
 on:
   push:
-    branches: ["main"]
-    tags: ['v*']
-  workflow_dispatch:
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build  # Baut Lovable-Projekt in /dist [web:1][web:22]
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Zip build
-        run: zip -r site-build.zip dist/
-
-      - name: Create Release
-        id: release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: site-build.zip
-          generate_release_notes: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-build-${{ github.sha }}
-          path: dist/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist
+    - name: Commit dist folder
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: dist  # Oder gh-pages
+        folder: dist
+        clean: true  # Überschreibt Ordner [web:21][web:16]
